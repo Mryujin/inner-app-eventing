@@ -15,7 +15,6 @@ class Application {
         Consoler consoler = context.getBean(Consoler.class);
         System.out.println("Starting up consoler...");
         System.out.println("Ready for Input:");
-        System.out.print("> ");
         consoler.listen();
     }
 
