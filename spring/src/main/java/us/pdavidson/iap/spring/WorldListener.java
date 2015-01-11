@@ -17,7 +17,7 @@ class WorldListener implements ApplicationListener<ConsolerEvent>{
     public void onApplicationEvent(ConsolerEvent event) {
         String source = (String) event.getSource();
         if (source.toLowerCase().contains("world")){
-            out.println("WorldListener: " + source);
+            out.println("WorldListener: " + source + " - " + Thread.currentThread().getName());
         }
     }
 }

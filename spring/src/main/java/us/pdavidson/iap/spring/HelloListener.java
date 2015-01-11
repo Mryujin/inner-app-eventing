@@ -16,7 +16,7 @@ import java.io.PrintStream;
      public void onApplicationEvent(ConsolerEvent event) {
          String source = (String) event.getSource();
          if (source.toLowerCase().contains("hello")){
-             out.println("HelloListener: " + source);
+             out.println("HelloListener: " + source + " - " + Thread.currentThread().getName());
          }
      }
 }

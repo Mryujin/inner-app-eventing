@@ -24,14 +24,14 @@ public class HelloWorldListener {
 
     public @Subscribe void onHelloEvent(String source){
         if (source.toLowerCase().contains("hello")){
-            out.println("HelloListener: " + source);
+            out.println("HelloListener: " + source + " - " + Thread.currentThread().getName());
         }
     }
 
 
     public @Subscribe void onWorldEvent(String source){
         if (source.toLowerCase().contains("world")){
-            out.println("WorldListener: " + source);
+            out.println("WorldListener: " + source + " - " + Thread.currentThread().getName());
         }
     }
 
