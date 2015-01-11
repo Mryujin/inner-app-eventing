@@ -1,4 +1,4 @@
-package us.pdavidson.iap.springmessaging;
+package us.pdavidson.iae.springmessing;
 
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.GenericMessage;
