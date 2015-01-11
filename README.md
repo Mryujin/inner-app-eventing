@@ -1,5 +1,22 @@
 # A simple comparison of Inner App Eventing.
 
+# The idea
+Each app can be run from an Application main class.
+Each app should print the following
+
+out: Starting up consoler...
+out: Ready for Input:
+
+in:  Hello Jimmy
+out: HelloListener: Hello Jimmy - :Thread-Name
+
+in:  Waynes World
+out: WorldListener: Waynes World - :Thread-Name
+
+in:  Hello World
+out: HelloListener: Hello World - :Thread-Name
+out: WorldListener: Hello World - :Thread-Name
+
 # Spring
 
 ## Benefits
@@ -23,4 +40,16 @@ Asynch version
 ## Possible Downsides
 Listeners must register with the EventBus, by default they must have knowledge of the event bus, but realistically, you're going to have an EventBus that is di'd
 
+# Spring Messaging
 
+## Benefits
+Built into Spring 4
+Should be easy to extend into spring integration if needed intra-app communication is needed
+Asych or Synch
+
+## Possible Downsides
+Listeners subscribe to the MessageChannel, it was pretty easy to inject the MessageChannel in the Constructor
+
+# Reactor
+## Benefits
+## Possible Downsides
