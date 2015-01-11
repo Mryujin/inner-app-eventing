@@ -16,7 +16,7 @@ Used internally, so it gets Spring Framework Events
 # Guava
 
 ## Benefits
-Easy
+Easy.
 Asynch version
 
 
